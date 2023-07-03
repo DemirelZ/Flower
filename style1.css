@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@100;200;300;400;500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.navbar{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px 0;
+}
+
+.navbar-left{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+
+}
+.navbar-left-logo{
+    
+    font-family: 'Indie Flower';
+    text-decoration: none;
+    line-height: 64px;
+    font-size: 40px;
+    color: rgb(40, 87, 40);
+}
+
+.navbar-left-menu{
+    
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.navbar-left-menu a{
+    text-decoration: none;
+    font-size: 18;
+    color: gray;
+}
+
+.navbar-left-menu a:nth-child(1){
+    font-weight: 700;
+    color: black;
+}
+.navbar-left-menu a:hover{
+    color: green;
+    transform: scale(1.1);
+    transition: ease 0.5s;
+}
+
+.navbar-left-logo:hover{
+    transform: scale(1.1);
+    transition: ease 0.5s;
+}
+
+.navbar-right{
+   
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 22px; 
+}
+.navbar-right i:hover {
+    color: gray;
+   transform: scale(1.1);
+   transition: ease .5s;
+}
+.banner{
+    
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+    background-color: #c1dcdc;
+
+}
+
+.banner-left{
+    
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 40px;
+    padding: 40px 0px 40px 50px;
+    z-index: 2;
+    
+}
+
+
+
+
+.banner-left h1 {
+    
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 64px;
+    width: 480px;
+}
+
+.banner-left-content{
+    
+    display: flex;
+    gap: 50px;
+}
+
+.contents p{
+    font-size: 32px;
+    font-weight: 600;
+}
+.contents span{
+    font-size: 18px;
+
+}
+.contents:nth-child(1){
+    border-right: 1px solid black;
+    padding-right: 50px;
+}
+
+.banner-left-search{
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+    border-radius: 20px;
+}
+
+.banner-left-search input{
+    border: none;
+    outline: none;
+    width: 80%;
+    font-size: 18px;
+}
+
+.banner-left-search i{
+    background-color: #c1dcdc;
+    padding: 8px 8px;
+    border-radius: 10px;
+}
+
+.banner-right {
+   
+    width: 50%;
+    
+    position: relative;
+}
+
+.banner-right img {
+    
+    position: absolute;
+    bottom: 0px;
+
+    transform: scaleX(-1);
+    
+}
+
+.banner-right-bg {
+    position: absolute;
+    background-color: gray;
+    width: 400px;
+    height: 360px;
+    bottom: 0;
+    right: 10%;
+    border-radius: 50% 20% 0px 50%;
+
+}
+
+
+.product{
+    
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.product-title{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.more{
+    background-color: #c1dcdc;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+}
+.more:hover{
+    transform: scale(1.1);
+    transition: ease .5s;
+}
+
+.product-card{
+    
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+    
+}
+.product-cards{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+
+}
+.product-cards img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-cards p{
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.product-cards span{
+    font-size: 18px;
+    color: gray;
+}
+
+.kategoriler{
+    
+    width: 90%;
+    margin: auto;
+}
+.kategoriler-top{
+    
+    text-align: center;
+    margin: 20px;
+}
+.kategoriler-cards{
+    
+    width: 100%; 
+    display: flex;
+    gap: 20px; 
+
+}
+.kategoriler-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.kategoriler-card img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.kategoriler-card img:hover{
+    transform: scale(1.1);
+    transition: ease .5s;
+}
+.kategoriler-card p{
+    font-weight: 800;
+    font-size: 24px;
+    text-align: center;
+}
+.kategoriler-bottom{
+    
+    text-align: center;
+    margin: 20px 0px;
+    
+}
+.kategoriler-bottom p{
+    margin-bottom: 10px;
+    
+    
+}
+
+
+
+.about{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(134, 126, 126, 0.276);
+    width: 100%;
+    padding: 20px 0; 
+}
+
+.about-title{
+    
+    text-align: center;
+}
+
+.about-title h1{
+    font-size: 32px;
+}
+.about-title p{
+    font-size: 18px;
+    color: gray;
+}
+
+.about-card{
+    
+    display: flex;
+    align-items: center;
+}
+
+.about-cards{
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.about-cards i{
+    font-size: 42px;
+    background-color: #c1dcdc;
+    padding: 20px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+
+.about-cards p{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about-cards span{
+    text-align: center;
+
+        
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.footer{
+  
+    display: flex;
+    flex-direction: row;
+    background-color: #c1dcdc;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left{
+    
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-left h1{
+    font-family: 'Indie Flower';
+}
+.footer-left p{
+    font-size: 18px;
+    color: black;
+}
+
+.footer-left-social{
+
+    display: flex;
+    gap: 5px;
+
+}
+
+.footer-left-social a{
+    border: 2px solid gray;
+    color: #566060;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.footer-left-social a:hover{
+   transform: scale(1.1);
+   transition: ease .5;
+}
+
+.footer-right{
+    
+    display: flex;
+    gap: 15px;
+
+}
+.footer-right ul li{
+    list-style-type: none;
+    font-size: 18px;
+}
+.footer-right ul li:nth-child(1){
+    font-weight: 800;
+}
+
+
+
+@media screen and (max-width:900px) {
+    .banner-left{
+        width: 100%;
+    }
+    .banner-left h1{
+        background-color: white;
+        opacity: 0.8;
+        border-radius: 20px;
+        padding: 10px;
+        width: 100%;
+        font-size: 35px;
+
+    }
+
+    .banner-left-content{
+
+        background-color: white;
+        opacity: 0.8;
+        border-radius: 20px;
+        width: 100%;
+        padding: 10px;
+    
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+    .footer-right{
+        display: none;
+    }
+    .footer-left{
+        align-items: center;
+    }
+    .about-card{
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+    }
+    .about-cards{
+        padding: 30px;
+    }
+}
+
+
+
